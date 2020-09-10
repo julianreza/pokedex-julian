@@ -79,9 +79,14 @@ const List = ({ filter }) => {
                             <div className="flex flex-row justify-around">
                                 {row.types.map((row, index) => {
                                     const findArray = _find(dataType, ["type", row])
-                                    const color = !_isEmpty(findArray) ? findArray.color : "bg-gray-700"
+                                    const color = !_isEmpty(findArray) ? findArray.color : "#523050"
                                     return (
-                                        <div key={index} className={`flex px-6 py-1 ${color} rounded-lg content-center`}>
+                                        <div
+                                            key={index}
+                                            style={{
+                                                backgroundColor: color
+                                            }}
+                                            className={"flex px-6 py-1 rounded-lg content-center"}>
                                             <span className="font font-sans text-white text-xs">{row}</span>
                                         </div>
                                     )
