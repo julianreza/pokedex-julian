@@ -59,7 +59,7 @@ const List = ({ filter }) => {
             <InfiniteScroll
                 initialLoad={false}
                 loadMore={moreData}
-                hasMore={limit < 150 && _isEmpty(filter)}
+                hasMore={limit < 151 && _isEmpty(filter)}
                 loader={
                     <LoadIndicator key={1} source={source} />
                 }
