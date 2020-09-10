@@ -1,6 +1,9 @@
 ## How to use
 
 ```bash
+# to create .env
+sudo yarn config:set
+
 # to install module
 yarn
 # or

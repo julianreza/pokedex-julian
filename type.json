@@ -1,38 +1,38 @@
 [
     {
         "type": "Fire",
-        "color": "bg-red-800"
+        "color": "#e6493e"
     },
     {
         "type": "Grass",
-        "color": "bg-green-900"
+        "color": "#76d62d"
     },
     {
         "type": "Poison",
-        "color": "bg-pink-900"
+        "color": "#e88787"
     },
     {
         "type": "Flying",
-        "color": "bg-teal-400"
+        "color": "#42868a"
     },
     {
         "type": "Water",
-        "color": "bg-blue-600"
+        "color": "#0095ff"
     },
     {
         "type": "Bug",
-        "color": "bg-green-600"
+        "color": "#1b9e06"
     },
     {
         "type": "Normal",
-        "color": "bg-gray-800"
+        "color": "#2b2727"
     },
     {
         "type": "Electric",
-        "color": "bg-yellow-700"
+        "color": "#ffa200"
     },
     {
         "type": "Ground",
-        "color": "bg-current"
+        "color": "#636363"
     }
 ]
