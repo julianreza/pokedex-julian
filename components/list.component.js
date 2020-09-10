@@ -77,11 +77,15 @@ const List = ({ filter }) => {
                             <span className="font font-sans text-white text-xl -mb-2">{row.number}</span>
                             <span className="font font-sans text-white text-2xl font-bold mb-2">{row.name}</span>
                             <div className="flex flex-row justify-around">
-                                {row.types.map((row, index) => (
-                                    <div key={index} className={`flex px-6 py-1 ${!_isEmpty(_find(dataType, ["type", row])) && _find(dataType, ["type", row]).color} rounded-lg content-center`}>
-                                        <span className="font font-sans text-white text-xs">{row}</span>
-                                    </div>
-                                ))}
+                                {row.types.map((row, index) => {
+                                    const findArray = _find(dataType, ["type", row])
+                                    const color = !_isEmpty(findArray) ? findArray.color : "bg-gray-700"
+                                    return (
+                                        <div key={index} className={`flex px-6 py-1 ${color} rounded-lg content-center`}>
+                                            <span className="font font-sans text-white text-xs">{row}</span>
+                                        </div>
+                                    )
+                                })}
                             </div>
                         </div>
                     </div>

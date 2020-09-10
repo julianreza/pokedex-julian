@@ -1,4 +1,5 @@
 {
+  "cacheDirectories": [".next/cache"],
   "name": "pokedex-julian",
   "version": "1.0.0",
   "scripts": {
