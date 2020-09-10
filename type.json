@@ -1,0 +1,38 @@
+[
+    {
+        "type": "Fire",
+        "color": "bg-red-800"
+    },
+    {
+        "type": "Grass",
+        "color": "bg-green-900"
+    },
+    {
+        "type": "Poison",
+        "color": "bg-pink-900"
+    },
+    {
+        "type": "Flying",
+        "color": "bg-teal-400"
+    },
+    {
+        "type": "Water",
+        "color": "bg-blue-600"
+    },
+    {
+        "type": "Bug",
+        "color": "bg-green-600"
+    },
+    {
+        "type": "Normal",
+        "color": "bg-gray-800"
+    },
+    {
+        "type": "Electric",
+        "color": "bg-yellow-700"
+    },
+    {
+        "type": "Ground",
+        "color": "bg-current"
+    }
+]
