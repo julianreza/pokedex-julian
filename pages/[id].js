@@ -41,18 +41,13 @@ const Pokemon = ({ filter }) => {
                                 <span className="font font-sans text-white font-medium text-2xl">Type</span>
                                 <div className="w-full flex flex-row justify-center">
                                     {sourcePokemon.types.map((row, index) => (
-                                        <div key={index} className={`
-                                    ${
-                                            !_isEmpty(_find(dataType, ["type", row])) &&
-                                            _find(dataType, ["type", row]).color
-                                            }
-                                    flex
-                                    px-6
-                                    py-1
-                                    rounded-lg
-                                    content-center
-                                    mr-2 ml-2
-                                    `}>
+                                        <div key={index}
+                                            style={{
+                                                backgroundColor:
+                                                    !_isEmpty(_find(dataType, ["type", row])) &&
+                                                    _find(dataType, ["type", row]).color
+                                            }}
+                                            className="flex px-6 py-1 rounded-lg content-center mr-2 ml-2">
                                             <span className="font font-sans text-white text-xl">{row}</span>
                                         </div>
                                     ))}
@@ -60,7 +55,7 @@ const Pokemon = ({ filter }) => {
                             </div>
                             <div className="w-full flex flex-row items-center px-6 mb-4">
                                 <span className="w-1/2 font font-sans text-white text-xl">HP :</span>
-                                <div className="w-3/4 flex py-1 rounded-lg justify-center bg-green-700 mr-2">
+                                <div className="w-3/4 flex py-1 rounded-lg justify-center bg-green-500 mr-2">
                                     <span className="font font-sans text-white text-xl"> {sourcePokemon.maxHP}</span>
                                 </div>
                                 <span className="w-1/2 font font-sans text-white text-xl ml-2">CP :</span>
@@ -128,7 +123,7 @@ const Pokemon = ({ filter }) => {
                                 }
                             </div>
                         </div> :
-                        <div className="h-64"/>
+                        <div className="h-64" />
                     }
                 </div>
 
